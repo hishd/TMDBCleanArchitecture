@@ -1,4 +1,4 @@
-package com.hishd.tmdbcleanarchitecture.data.movie
+package com.hishd.tmdbcleanarchitecture.data.model.movie
 
 
 import com.google.gson.annotations.SerializedName

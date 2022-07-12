@@ -1,4 +1,4 @@
-package com.hishd.tmdbcleanarchitecture.data.artist
+package com.hishd.tmdbcleanarchitecture.data.model.artist
 
 
 import com.google.gson.annotations.SerializedName
