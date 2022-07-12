@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -14,6 +15,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String","API_KEY","\"4e48e73eafce3743af952bbcc82bc72d\""
     }
 
     buildTypes {
@@ -29,9 +32,17 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
 }
 
 dependencies {
+    def lifecycle_version = "2.6.0-alpha01"
+    def room_version = "2.4.2"
+    def retrofit_version = "2.9.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
@@ -40,4 +51,46 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+    // Annotation processor
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+
+    //Room Database Dependencies
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt  "androidx.room:room-compiler:$room_version"
+    androidTestImplementation "androidx.room:room-testing:2.4.2"
+
+    //Coroutines support for Room Database
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //Dagger Dependencies
+    implementation 'com.google.dagger:dagger-android:2.35.1'
+    kapt 'com.google.dagger:dagger-compiler:2.35.1'
+
+    //Retrofit Dependencies
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+
+    //GSON Dependencies
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    //Logging Interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+
+    //Glider Dependencies
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    kapt 'com.github.bumptech.glide:compiler:4.13.2'
+
 }
