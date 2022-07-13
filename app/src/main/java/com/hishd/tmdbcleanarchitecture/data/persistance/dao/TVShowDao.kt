@@ -16,5 +16,5 @@ interface TVShowDao {
     suspend fun deleteAllTVShows()
 
     @Query("SELECT * FROM tv_shows")
-    fun getTVShows() : Flow<List<TVShow>>
+    fun getTVShows() : List<TVShow>
 }
