@@ -1,4 +1,4 @@
-package com.hishd.tmdbcleanarchitecture.data.repository.tvshow
+package com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasource
 
 import com.hishd.tmdbcleanarchitecture.data.model.tvshow.TVShow
 

@@ -1,6 +1,7 @@
-package com.hishd.tmdbcleanarchitecture.data.repository.artist
+package com.hishd.tmdbcleanarchitecture.data.repository.artist.datasourceimpl
 
 import com.hishd.tmdbcleanarchitecture.data.model.artist.Artist
+import com.hishd.tmdbcleanarchitecture.data.repository.artist.datasource.ArtistCachedDataSource
 
 class ArtistCachedDataSourceImpl: ArtistCachedDataSource {
 

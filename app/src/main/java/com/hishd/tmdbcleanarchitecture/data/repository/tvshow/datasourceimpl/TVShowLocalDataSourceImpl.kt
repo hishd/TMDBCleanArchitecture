@@ -1,7 +1,8 @@
-package com.hishd.tmdbcleanarchitecture.data.repository.tvshow
+package com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasourceimpl
 
 import com.hishd.tmdbcleanarchitecture.data.model.tvshow.TVShow
 import com.hishd.tmdbcleanarchitecture.data.persistance.dao.TVShowDao
+import com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasource.TVShowLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

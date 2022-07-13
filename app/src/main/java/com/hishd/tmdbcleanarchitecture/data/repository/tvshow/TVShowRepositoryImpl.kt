@@ -1,6 +1,9 @@
 package com.hishd.tmdbcleanarchitecture.data.repository.tvshow
 
 import com.hishd.tmdbcleanarchitecture.data.model.tvshow.TVShow
+import com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasource.TVShowCachedDataSource
+import com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasource.TVShowLocalDataSource
+import com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasource.TVShowRemoteDataSource
 import com.hishd.tmdbcleanarchitecture.domain.repository.TVShowRepository
 
 class TVShowRepositoryImpl(

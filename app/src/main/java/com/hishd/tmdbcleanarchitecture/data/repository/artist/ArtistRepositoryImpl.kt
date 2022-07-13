@@ -1,6 +1,9 @@
 package com.hishd.tmdbcleanarchitecture.data.repository.artist
 
 import com.hishd.tmdbcleanarchitecture.data.model.artist.Artist
+import com.hishd.tmdbcleanarchitecture.data.repository.artist.datasource.ArtistCachedDataSource
+import com.hishd.tmdbcleanarchitecture.data.repository.artist.datasource.ArtistLocalDataSource
+import com.hishd.tmdbcleanarchitecture.data.repository.artist.datasource.ArtistRemoteDataSource
 import com.hishd.tmdbcleanarchitecture.domain.repository.ArtistRepository
 
 class ArtistRepositoryImpl(

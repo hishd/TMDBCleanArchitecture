@@ -1,7 +1,8 @@
-package com.hishd.tmdbcleanarchitecture.data.repository.movie
+package com.hishd.tmdbcleanarchitecture.data.repository.movie.datasourceimpl
 
 import com.hishd.tmdbcleanarchitecture.data.model.movie.Movie
 import com.hishd.tmdbcleanarchitecture.data.persistance.dao.MovieDao
+import com.hishd.tmdbcleanarchitecture.data.repository.movie.datasource.MovieLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

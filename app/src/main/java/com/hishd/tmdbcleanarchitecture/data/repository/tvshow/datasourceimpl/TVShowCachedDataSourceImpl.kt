@@ -1,6 +1,7 @@
-package com.hishd.tmdbcleanarchitecture.data.repository.tvshow
+package com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasourceimpl
 
 import com.hishd.tmdbcleanarchitecture.data.model.tvshow.TVShow
+import com.hishd.tmdbcleanarchitecture.data.repository.tvshow.datasource.TVShowCachedDataSource
 
 class TVShowCachedDataSourceImpl: TVShowCachedDataSource {
 

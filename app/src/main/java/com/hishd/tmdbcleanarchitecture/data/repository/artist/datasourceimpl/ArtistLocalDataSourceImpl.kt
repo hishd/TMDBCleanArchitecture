@@ -1,7 +1,8 @@
-package com.hishd.tmdbcleanarchitecture.data.repository.artist
+package com.hishd.tmdbcleanarchitecture.data.repository.artist.datasourceimpl
 
 import com.hishd.tmdbcleanarchitecture.data.model.artist.Artist
 import com.hishd.tmdbcleanarchitecture.data.persistance.dao.ArtistDao
+import com.hishd.tmdbcleanarchitecture.data.repository.artist.datasource.ArtistLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

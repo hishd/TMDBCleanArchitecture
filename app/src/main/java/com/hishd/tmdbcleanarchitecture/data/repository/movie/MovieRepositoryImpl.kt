@@ -1,6 +1,9 @@
 package com.hishd.tmdbcleanarchitecture.data.repository.movie
 
 import com.hishd.tmdbcleanarchitecture.data.model.movie.Movie
+import com.hishd.tmdbcleanarchitecture.data.repository.movie.datasource.MovieCachedDataSource
+import com.hishd.tmdbcleanarchitecture.data.repository.movie.datasource.MovieLocalDataSource
+import com.hishd.tmdbcleanarchitecture.data.repository.movie.datasource.MovieRemoteDatasource
 import com.hishd.tmdbcleanarchitecture.domain.repository.MovieRepository
 
 class MovieRepositoryImpl(

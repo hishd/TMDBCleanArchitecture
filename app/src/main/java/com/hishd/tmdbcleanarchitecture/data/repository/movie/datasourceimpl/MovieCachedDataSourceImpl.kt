@@ -1,7 +1,7 @@
-package com.hishd.tmdbcleanarchitecture.data.repository.movie
+package com.hishd.tmdbcleanarchitecture.data.repository.movie.datasourceimpl
 
 import com.hishd.tmdbcleanarchitecture.data.model.movie.Movie
-import com.hishd.tmdbcleanarchitecture.data.model.movie.MovieList
+import com.hishd.tmdbcleanarchitecture.data.repository.movie.datasource.MovieCachedDataSource
 
 class MovieCachedDataSourceImpl: MovieCachedDataSource {
     private val movieList = ArrayList<Movie>()
